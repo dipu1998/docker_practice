@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+LABEL version="0.0.1"
+LABEL maintainer="hr.websinception@gmail.com"
+
+RUN apt update & apt upgrade -y
+RUN agt install nginx -y
+EXPOSE 80
